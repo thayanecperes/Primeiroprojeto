@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ab252b67d5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="estilo.css">
+    <title>Thayane Peres</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <!-- LOGO  -->
+            <img src="" alt="">
+        </div>
+
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/thayanecperes">GitHub</a>
+            </li>
+            <li>
+                <a target="_blank" href="thayanecperes@gmail.com">E-mail</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/21983554513">Fale Comigo!</a>
+            </li>
+        </ul>
+
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Thayane Peres</h1>
+                <h5>Full Developer</h5>
+            </div>
+
+            <br/><br/><br/>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-circle-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                Estudante de Analise e Desenvolvimento de Sistemas pela UNESA. E participante da terceira edição do HIRING CODES. 
+                Um BootCamp intensivo de Front-end, Back-end e VTX.IO. Ministrado pela GAMA ACADEMY.
+                </p>
+
+            </div>
+
+            <br/>
+
+            <div class="form">
+
+                <div>
+                    <p>Deixe seu contato.</p>
+                </div>
+
+                <form action="">
+                    <input type="text" placeholder="Seu Melhor E-mail :)">
+                    <button>enviar!</button>
+                </form>
+
+            </div>
+
+            <br/><br/>
+
+        </section>
+
+        <section class="cards">
+
+            <h2>COMPETÊNCIAS</h2>
+
+            <div class="flex">
+
+                <div>
+                    <img src="./c.png" alt="">
+                        <p>Linguagem C</p><br/>
+                        <p>C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela Organização Internacional para Padronização (ISO), criada em 1972 por Dennis Ritchie na empresa AT&T Bell Labs para desenvolvimento do sistema operacional Unix (originalmente escrito em Assembly). .</p>
+                </div>
+
+                <div>
+                    <img src="./html5-logo-2.png" alt="">
+                      <p>HTML C</p><br/>
+                        <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo.</p>
+                </div>
+
+                <div>
+                    <img src="./css-logo.png" alt="">
+                    <p>CSS</p><br/>
+                        <p> Cascading Style Sheets é um mecanismo para adicionar estilo a um documento
+                            web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags < style >. 
+                            Também é possivel, em vez de colocar a formatação dentro do documento, criar um link para o arquivo
+                            CSS que contem os estilos. </p>
+                </div>
+
+               
+                
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+           display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
